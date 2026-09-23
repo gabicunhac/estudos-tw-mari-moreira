@@ -1,0 +1,49 @@
+---
+title: "Automações"
+sidebarTitle: "Visão geral"
+description: "O que é uma automação e como escolher o gatilho e o modo de atualização."
+---
+
+{/* Dono: Tech Writing. Revisar quando a feature sair do beta, o preço em créditos mudar ou um gatilho novo for lançado. */}
+
+Uma automação é um agente que atualiza a documentação sem você precisar pedir. Você define o que faz ele começar e quais repositórios ele pode ler, e ele decide se alguma página precisa mudar.
+
+## Como funciona
+
+1. Um **gatilho**, que é o evento que você escolheu, inicia uma **execução**.
+2. O agente lê os **repositórios de contexto**, que são os repositórios que você liberou para ele consultar.
+3. Se encontrar algo para atualizar, faz a mudança de acordo com o **modo de atualização**: abrindo um pull request ou fazendo merge direto.
+4. Se não encontrar nada, a execução termina sem mudanças. Só as execuções que atualizam a documentação consomem créditos.
+
+## Como escolher o gatilho
+
+Pense no que acontece logo antes de a documentação ficar desatualizada e responda às perguntas abaixo, nesta ordem.
+
+- **A mudança começa no código do produto?** Por exemplo, um endpoint novo ou um parâmetro que mudou. Use **alteração de código**.
+- **A mudança começa em outra página da documentação?** Por exemplo, uma tradução que precisa acompanhar a página original. Use **atualização de conteúdo**. [CONFIRMAR se o gatilho cobre esse caso]
+- **A mudança começa numa ferramenta fora do repositório?** Use **integração**, disponível só no plano Custom. [CONFIRMAR quais ferramentas]
+- **Nenhuma das anteriores?** Use **agendamento personalizado**, que roda num intervalo fixo definido por você.
+
+<Tip>
+Evite usar agendamento como padrão. Quando algo muda, a documentação fica desatualizada até a próxima execução marcada.
+</Tip>
+
+## Como escolher o modo de atualização
+
+- **Pull request:** o agente abre um PR e alguém do time revisa antes de publicar. Use na maioria dos casos e sempre em traduções, referência de API e conteúdo voltado para clientes.
+- **Merge direto:** a mudança é publicada sem revisão humana. Use só em conteúdo em que um erro publicado não cause problema.
+
+<Warning>
+Com merge direto, um erro do agente vai para o ar sem que ninguém veja antes. Se for sua primeira automação, comece com pull request.
+</Warning>
+
+## Próximos passos
+
+<CardGroup cols={2}>
+  <Card title="Criar uma automação" href="/dia-1-documentacao-do-zero-com-ia/criar-automacao">
+    Configure gatilho, repositórios de contexto e modo de atualização.
+  </Card>
+  <Card title="Referência" href="/dia-1-documentacao-do-zero-com-ia/referencia">
+    Gatilhos, modos, créditos e limites.
+  </Card>
+</CardGroup>
