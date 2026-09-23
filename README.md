@@ -1,51 +1,50 @@
 # Technical Writer e Inteligência Artificial
 
-Este repositório reúne os exercícios que fiz no curso Technical Writer e Inteligência Artificial, da Escola de Conteúdo, com a Mari Moreira.
+Exercícios do curso Technical Writer e Inteligência Artificial, da Escola de Conteúdo, com a Mari Moreira.
 
-Cada dia do curso tem uma pasta com a documentação produzida. As páginas estão em Markdown para ficarem legíveis direto no GitHub, e o `docs.json` organiza a navegação caso o conteúdo seja publicado na Mintlify.
+## Objetivo
 
-## Conteúdo
+Praticar a criação de documentação técnica com apoio de IA, do rascunho à revisão. Em cada exercício, eu:
 
-| Dia | Exercício | Pasta |
-|---|---|---|
-| 1 | Documentação do zero com IA | [dia-1-documentacao-do-zero-com-ia](dia-1-documentacao-do-zero-com-ia) |
-| 2 | Em breve | |
+- Parto de um cenário e de um material bruto, como uma thread de engenharia.
+- Gero uma primeira versão com IA.
+- Reviso com critérios de documentação para corrigir erros, organizar o conteúdo e deixar o texto útil para quem lê.
+
+## Exercícios
+
+Cada dia do curso tem uma pasta com a documentação produzida.
+
+| Dia | Exercício |
+|---|---|
+| 1 | [Documentação do zero com IA](dia-1-documentacao-do-zero-com-ia) |
+| 2 | Em breve |
 
 ## Dia 1 · Documentação do zero com IA
 
-**Cenário:** a feature Automations entra no ar em duas semanas e a pessoa de Tech Writing recebe só uma thread crua com as informações de engenharia e produto. O público da documentação são TWs e devs que administram a doc.
+### Cenário
+
+A feature Automations entra no ar em duas semanas. A pessoa de Tech Writing recebe só uma thread com informações de engenharia e produto e precisa montar a documentação para TWs e devs.
 
 ### Páginas
 
-| Página | Tipo | Para que serve |
-|---|---|---|
-| [Visão geral das automações](dia-1-documentacao-do-zero-com-ia/visao-geral.md) | Conceito | Entender o que é uma automação e escolher gatilho e modo de atualização |
-| [Como criar uma automação](dia-1-documentacao-do-zero-com-ia/criar-automacao.md) | Tarefa | Configurar uma automação passo a passo |
-| [Referência das automações](dia-1-documentacao-do-zero-com-ia/referencia.md) | Referência | Consultar gatilhos, modos, créditos e limites |
+| Página | Tipo |
+|---|---|
+| [Visão geral das automações](dia-1-documentacao-do-zero-com-ia/visao-geral.md) | Conceito |
+| [Como criar uma automação](dia-1-documentacao-do-zero-com-ia/criar-automacao.md) | Tarefa |
+| [Referência das automações](dia-1-documentacao-do-zero-com-ia/referencia.md) | Referência |
 
-### Revisão com o checklist de 8 princípios
+### Revisão
 
-A primeira versão juntava tudo numa página, dizia que toda execução custava 250 créditos (só cobra quando atualiza), não alertava sobre o risco do merge direto e não tinha dono nem momento de revisão definidos.
+A primeira versão foi gerada com IA e revisada com o checklist de 8 princípios e a lista de erros comuns da IA. As principais mudanças:
 
-### Revisão com os erros comuns da IA
-
-| Erro comum | O que aparecia no texto | O que mudou |
-|---|---|---|
-| Enche linguiça | Frase de abertura com cara de marketing e explicações que só repetiam o óbvio | Cortei o que não ajudava a pessoa a decidir ou agir |
-| Usa jargão sem definir | Gatilho, execução e repositórios de contexto apareciam sem explicação | A visão geral abre com os conceitos principais definidos |
-| Mistura os tipos | Conceito, tarefa e referência na mesma página | Três páginas, uma para cada tipo |
-| Lista em vez de orientar | Os quatro gatilhos lado a lado numa tabela, sem dizer qual escolher | Perguntas em ordem que levam ao gatilho certo, com agendamento como última opção |
-
-Também tirei duas afirmações que o insumo não sustentava: que os repositórios precisam estar conectados antes e que adicionar contexto demais causa mudanças fora do esperado.
+- Separei o conteúdo em três páginas, uma para cada tipo.
+- Corrigi a informação de créditos: a cobrança só acontece quando há atualização.
+- Incluí um alerta sobre o risco do merge direto.
+- Defini os conceitos principais logo no início da visão geral.
+- Troquei a tabela de gatilhos por perguntas que ajudam a escolher o certo.
+- Cortei frases com cara de marketing e afirmações que a thread não sustentava.
+- Defini dono e momento de revisão para cada página.
 
 ### Pendências
 
-Cada página termina com uma lista do que ainda precisa ser validado com engenharia e produto, como o caminho no dashboard, as integrações disponíveis e o que acontece quando os créditos acabam.
-
-### Manutenção
-
-| Página | Dono | Revisar quando |
-|---|---|---|
-| Visão geral | Tech Writing | A feature sair do beta ou um gatilho novo for lançado |
-| Como criar uma automação | Tech Writing | O fluxo do dashboard mudar |
-| Referência | Tech Writing | Preço, limites ou planos mudarem |
+Cada página termina com o que ainda precisa ser validado com engenharia e produto.
