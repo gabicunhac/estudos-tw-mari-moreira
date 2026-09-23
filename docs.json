@@ -1,0 +1,20 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Technical Writer e Inteligência Artificial",
+  "colors": {
+    "primary": "#0E7C66"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Dia 1 · Documentação do zero com IA",
+        "pages": [
+          "dia-1-documentacao-do-zero-com-ia/visao-geral",
+          "dia-1-documentacao-do-zero-com-ia/criar-automacao",
+          "dia-1-documentacao-do-zero-com-ia/referencia"
+        ]
+      }
+    ]
+  }
+}
