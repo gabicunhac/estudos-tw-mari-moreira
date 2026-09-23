@@ -1,6 +1,6 @@
 # Technical Writer e Inteligência Artificial
 
-Exercícios que fiz no curso Technical Writer e Inteligência Artificial, da Escola de Conteúdo, com a Mari Moreira.
+Este repositório reúne os exercícios que fiz no curso Technical Writer e Inteligência Artificial, da Escola de Conteúdo, com a Mari Moreira.
 
 Cada dia do curso tem uma pasta com a documentação produzida. As páginas estão em Markdown para ficarem legíveis direto no GitHub, e o `docs.json` organiza a navegação caso o conteúdo seja publicado na Mintlify.
 
